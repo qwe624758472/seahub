@@ -111,6 +111,8 @@ urlpatterns = patterns(
 
     (r'^accounts/', include('seahub.base.registration_urls')),
     (r'^sso/$', sso),
+    url(r'^my-libs2/$', my_libs2, name="my_libs2"),
+
     url(r'^shib-login/', shib_login, name="shib_login"),
 
     (r'^oauth/', include('seahub.oauth.urls')),

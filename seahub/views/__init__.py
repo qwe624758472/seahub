@@ -1168,3 +1168,7 @@ def client_token_login(request):
             auth_login(request, user)
 
     return HttpResponseRedirect(request.GET.get("next", reverse('libraries')))
+
+def my_libs2(request):
+    return render_to_response('my_libs2.html', {},
+                              context_instance=RequestContext(request))

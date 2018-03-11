@@ -39,3 +39,5 @@ deps
 ghostdriver.log
 seahub/thumbnail/thumb/*
 .virtualenv
+node_modules
+webpack-stats.json
